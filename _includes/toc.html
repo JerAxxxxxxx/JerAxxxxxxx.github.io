@@ -1,0 +1,40 @@
+<!-- Table of Contents -->
+<div class="toc-container">
+    <h5 class="toc-header">TABLE OF CONTENTS</h5>
+    <div id="toc"></div>
+</div>
+
+<script>
+    // Simple TOC generation script for older browsers or if main JS fails
+    document.addEventListener('DOMContentLoaded', function () {
+        var toc = document.getElementById('toc');
+        var headers = document.querySelectorAll('.post-container h2, .post-container h3');
+
+        if (headers.length > 0 && toc) {
+            var list = document.createElement('ul');
+            list.className = 'toc-list';
+
+            headers.forEach(function (header, index) {
+                var id = header.id;
+                if (!id) {
+                    id = 'header-' + index;
+                    header.id = id;
+                }
+
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.className = 'toc-link';
+                a.href = '#' + id;
+                a.innerText = header.innerText;
+                a.style.paddingLeft = header.tagName === 'H3' ? '20px' : '0px';
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            toc.appendChild(list);
+        } else if (toc) {
+            document.querySelector('.toc-container').style.display = 'none';
+        }
+    });
+</script>

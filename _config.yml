@@ -1,18 +1,25 @@
 # Site settings
 title: JerAxxxxxxx
-SEOTitle: JerAxxxxxxx's blog
+SEOTitle: JerAxxxxxxx's Technical Blog | Java, Kong, Sentinel
 header-img: img/background/apofiss_art_cats.jpg
 email: q14341319@gmail.com
-description: "写一句你想写的话"
-keyword: "我的博客"
+description: "技术博客 | 分享 Java、微服务、API 网关等技术心得"
+keyword: "Java, Kong, Sentinel, 微服务, API网关, Docker, 技术博客"
 url: "https://jeraxxxxxxx.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/jeraxxxxxxx/jeraxxxxxxx.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "All roads lead to Rome."
+sidebar-about-description: "All roads lead to Rome. 条条大路通罗马"
 sidebar-avatar: /img/background/Andrew-sutherland-transparent.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Modern Features
+dark_mode: true                         # Enable dark mode toggle
+reading_time: true                      # Show reading time estimates
+search_enabled: true                    # Enable search functionality
+toc_enabled: true                       # Enable table of contents for posts
+smooth_scroll: true                     # Enable smooth scrolling
 
 
 
@@ -82,7 +89,7 @@ ga_domain:                # 默认的是 auto, 这里我是自定义了的域名
 
 
 # Featured Tags
-featured-tags: false                     # 是否使用首页标签
+featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 

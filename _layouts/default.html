@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-        <script type="text/x-mathjax-config">
+
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 tex2jax: {
                 skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -10,22 +12,36 @@
                 }
             });
         </script>
-    </head>
+</head>
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
+
 <body ontouchstart="">
 
+    <!-- Reading Progress -->
+    <div class="reading-progress-container">
+        <div class="reading-progress-bar"></div>
+    </div>
+
     {% include nav.html %}
+    {% include search.html %}
 
     {{ content }}
 
     {% include footer.html %}
 
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
 
-<!-- Image to hack wechat -->
-<img src="/img/apple-touch-icon.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
+    <!-- Modern Blog JS -->
+    <script src="{{ " /js/modern-blog.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Image to hack wechat -->
+    <img src="/img/apple-touch-icon.png" width="0" height="0" />
+    <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
 
