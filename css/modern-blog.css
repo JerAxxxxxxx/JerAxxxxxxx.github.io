@@ -6,31 +6,31 @@
     --bg-tertiary: #f1f3f5;
     --bg-card: #ffffff;
     --bg-glass: rgba(255, 255, 255, 0.8);
-    
+
     --text-primary: #212529;
     --text-secondary: #495057;
     --text-tertiary: #868e96;
-    
+
     --accent-primary: #0085a1;
     --accent-secondary: #00bfd8;
     --accent-hover: #00657b;
-    
+
     --border-color: #e9ecef;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-    
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', monospace;
-    
+
     /* Spacing */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.5rem;
     --spacing-xl: 3rem;
-    
+
     /* Transitions */
     --transition-fast: 0.15s ease;
     --transition-normal: 0.3s ease;
@@ -46,19 +46,19 @@
     --bg-tertiary: #2d2d2d;
     --bg-card: #1e1e1e;
     --bg-glass: rgba(30, 30, 30, 0.8);
-    
+
     --text-primary: #e9ecef;
     --text-secondary: #adb5bd;
     --text-tertiary: #6c757d;
-    
+
     --accent-primary: #4dd0e1;
     --accent-secondary: #26c6da;
     --accent-hover: #80deea;
-    
+
     --border-color: #343a40;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Base Styles */
@@ -74,7 +74,12 @@ body {
 }
 
 /* Typography Enhancements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-primary);
     margin-top: 0;
     line-height: 1.3;
@@ -222,13 +227,14 @@ a:hover {
 .toc-link {
     display: block;
     color: var(--text-secondary);
-    font-size: 1rem;
-    padding: 6px 0;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    line-height: 1.6;
     transition: color var(--transition-fast);
 }
 
-.toc-link:hover, .toc-link.active {
+.toc-link:hover,
+.toc-link.active {
     color: var(--accent-primary);
 }
 
@@ -289,7 +295,8 @@ pre:hover .copy-button {
 
 /* Glassmorphism Header */
 .intro-header {
-    margin-bottom: 0; /* Removing default margin to handle it better */
+    margin-bottom: 0;
+    /* Removing default margin to handle it better */
 }
 
 .post-heading-wrapper {
@@ -297,5 +304,6 @@ pre:hover .copy-button {
     backdrop-filter: blur(2px);
     padding: 40px;
     border-radius: var(--radius-lg);
-    color: white; /* Always white on background images */
+    color: white;
+    /* Always white on background images */
 }
