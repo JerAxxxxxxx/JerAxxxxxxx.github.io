@@ -222,8 +222,9 @@ a:hover {
 .toc-link {
     display: block;
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    padding: 4px 0;
+    font-size: 1rem;
+    padding: 6px 0;
+    line-height: 1.5;
     transition: color var(--transition-fast);
 }
 
